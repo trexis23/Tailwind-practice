@@ -2,18 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- TODO: Add favicon. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite ➕ Tailwind</title>
+    <title>About Me Tailwind</title>
   </head>
   <body>
     <h1
-      class="text-center text-3xl font-semibold text-red-500 transition-all md:text-5xl"
+      class="bg-emerald-200 text-center text-3xl font-semibold text-black transition-all md:text-5xl"
     >
-      Hello
+      Roxana Vatamanu
     </h1>
+
+    <div class="bg-emerald-200 py-10 px-10 text-center">
+      <h2>
+        Hi there! If you're reading this that means my attempt at making a Bio
+        using Tailwind was somewhat successful.
+        <p>
+          I'm Roxana, I'm 23 (fun fact: while working on this bio I turned 24),
+          I'm from Romania but I live in London and I just finished my Aerospace
+          Engineering with Management degree.
+        </p>
+      </h2>
+    </div>
+    <section class="flex flex-col items-center bg-emerald-100" id="hobbies">
+      <h2>Hobbies and interests:</h2>
+      <ul class="list-outside list-decimal">
+        <li>Coffee</li>
+        <li>Listening to music</li>
+        <li>
+          Football - last year I volunteered at the UEFA EURO 2021 championship.
+          <img src="euro3.jpg" class="h-80 w-52 object-center" />
+        </li>
+        <li>Salsa and Bachata Dancing</li>
+        <li>
+          Sports: table tennis and badmington - want to get into squash next
+        </li>
+      </ul>
+    </section>
+
+    <script type="module" src="./src/index.js"></script>
+
+    <section class="Social Media bg-emerald-200 py-8 text-center">
+      <h2>Social Media</h2>
+      <div
+        class="flex flex-row-reverse place-content-center space-x-4 space-x-reverse"
+      >
+        <a href="https://www.linkedin.com/in/roxana-vatamanu/"
+          ><img src="LinkedIn_logo_initials.png" alt="" class="w-8 hover:w-9"
+        /></a>
+
+        <a href="https://www.instagram.com/roxanavatamanu/"
+          ><img src="Instagram_icon.png.webp" alt="" class="w-8 hover:w-9"
+        /></a>
+      </div>
+    </section>
 
     <script type="module" src="./src/index.js"></script>
   </body>
